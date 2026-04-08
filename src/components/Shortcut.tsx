@@ -9,8 +9,14 @@ const Shortcut = ({ command }: Props) => {
 
   const altKey = isMacOS() ? '⌥' : 'Alt';
 
-  const readableCommand = command.replace(/\+/g, ' + ').replace(/alt/g, altKey).toUpperCase();
-
+  const readableCommand = command
+    .replace(/\+/g, ' + ')
+    .replace(/alt/g, altKey)
+    .split(' ')
+    .map(token =>
+      token.length === 1 && /[a-zA-Z]/.test(token) ? token.toLowerCase() : token.toUpperCase(),
+    )
+    .join(' ');
   return (
     <div
       role="button"
