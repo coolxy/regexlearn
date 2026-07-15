@@ -8,13 +8,15 @@
   "scripts": {
     "dev": "next dev -p 3003",
     "build": "next build",
-    "postbuild": "next-sitemap",
+    "postbuild": "next-sitemap && node ./scripts/html-lang-fixer.js",
     "start": "next start",
-    "lint": "next lint",
-    "export": "next export",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "html-lang-fixer": "node ./scripts/html-lang-fixer.js"
   },
   "license": "MIT",
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "dependencies": {
     "@headlessui/react": "^1.7.11",
     "@use-it/event-listener": "^0.1.7",
@@ -23,23 +25,50 @@
     "draft-js": "^0.11.7",
     "lodash.xor": "^4.5.0",
     "lookie": "^1.0.4",
-    "next": "^13.2.1",
+    "next": "15.5.20",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icomoon": "^2.5.7",
-    "react-intl": "^6.2.10"
+    "react-intl": "^7.1.14"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.3",
-    "@types/draft-js": "^0.11.8",
-    "@types/node": "^18.0.5",
-    "@types/react": "^18.0.28",
+    "@types/draft-js": "^0.11.20",
+    "@types/node": "^20.19.43",
+    "@types/react": "^18.3.31",
     "autoprefixer": "^10.4.13",
-    "eslint": "^8.34.0",
-    "eslint-config-next": "^13.2.1",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "15.5.20",
     "next-sitemap": "^4.1.8",
-    "postcss": "^8.4.21",
-    "tailwindcss": "^3.2.7",
-    "typescript": "^4.9.5"
+    "postcss": "^8.5.19",
+    "tailwindcss": "^3.4.19",
+    "typescript": "^5.9.3"
+  },
+  "overrides": {
+    "@types/react": "$@types/react",
+    "ajv": "6.15.0",
+    "braces": "3.0.3",
+    "cross-spawn": "7.0.6",
+    "flatted": "3.4.2",
+    "immutable": "3.8.3",
+    "js-yaml": "4.3.0",
+    "micromatch": "4.0.8",
+    "minimist": "1.2.8",
+    "node-fetch": "2.7.0",
+    "postcss": "$postcss",
+    "ua-parser-js": "0.7.41",
+    "tailwindcss": {
+      "chokidar": {
+        "anymatch": {
+          "picomatch": "2.3.2"
+        },
+        "readdirp": {
+          "picomatch": "2.3.2"
+        }
+      },
+      "micromatch": {
+        "picomatch": "2.3.2"
+      }
+    }
   }
 }

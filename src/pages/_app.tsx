@@ -26,7 +26,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
   }, []);
 
   const { metadata } = pageProps || {};
-  const baseURL = process.env.NEXT_PUBLIC_BASE_URL;
+  const baseURL = process.env.NEXT_PUBLIC_BASE_URL || 'https://regexlearn.com';
   const { asPath } = useRouter();
 
   const href = asPath.replace('/en', '/').replace('//', '/');
@@ -50,7 +50,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
                 key={locale}
                 rel="alternate"
                 hrefLang={locale}
-                href={`${process.env.NEXT_PUBLIC_BASE_URL}${locale === 'en' ? '' : locale + '/'}${metadata.hrefLang
+                href={`${baseURL}/${locale === 'en' ? '' : locale + '/'}${metadata.hrefLang
                   }`}
               />
             ))}

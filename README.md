@@ -44,9 +44,9 @@ Built with [Next.js](https://nextjs.org/), [TypeScript](https://www.typescriptla
 [Tailwind CSS](https://tailwindcss.com/).
 
 ```bash
-yarn          # install dependencies
-yarn dev      # start the dev server at http://localhost:3003
-yarn build    # production build
+npm install   # install dependencies
+npm run dev   # start the dev server at http://localhost:3003
+npm run build # production build
 ```
 
 Local environment variables belong in `.env` or one of Next.js's `.env.*.local` files. These files

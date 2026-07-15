@@ -93,11 +93,15 @@ const Step = () => {
       {data.videoURL && modalIsOpen && (
         <div className="fixed flex flex-col items-center justify-center z-50 inset-0 bg-neutral-900/70">
           <iframe
+            title={`${lesson.title} video`}
             width="90%"
             height="90%"
             src={data.videoURL}
             frameBorder={0}
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            loading="lazy"
+            referrerPolicy="strict-origin-when-cross-origin"
+            sandbox="allow-scripts allow-same-origin allow-presentation"
             allowFullScreen
           />
           <Button
