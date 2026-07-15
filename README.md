@@ -1,49 +1,31 @@
-# **🔓 [regexlearn.com](http://regexlearn.com/): Unlock the Secrets of Regex**
+# RegexLearn
 
-Embark on an exciting journey to learn and master regular expressions with
-**[regexlearn.com](https://regexlearn.com/)**. Our engaging, step-by-step approach and feature-rich
-platform ensure a smooth learning experience that will have you writing regex like a pro in no time!
+[![Release](https://img.shields.io/github/v/release/aykutkardas/regexlearn.com)](https://github.com/aykutkardas/regexlearn.com/releases)
+[![License](https://img.shields.io/github/license/aykutkardas/regexlearn.com)](LICENCE)
+[![Stars](https://img.shields.io/github/stars/aykutkardas/regexlearn.com?style=flat)](https://github.com/aykutkardas/regexlearn.com/stargazers)
 
-<br>
+**[regexlearn.com](https://regexlearn.com/)** is a free, open-source platform that turns regular
+expressions from a black art into a skill you can pick up in an afternoon. Learn step by step in 16
+languages, keep the cheatsheet nearby, and test your patterns live in the playground.
 
-## **🌟 Features**
+## Features
 
-- **🚶 Step-by-Step Learning:** Progress through thoughtfully crafted lessons and examples at your
-  own pace, catering to both beginners and experienced users.
-- **🎓 Interactive:** Immerse yourself in hands-on activities to reinforce your understanding and
-  boost retention.
-- **🚀 Shortcut Friendly:** Uncover valuable shortcuts and tips that will streamline and optimize
-  your regex-writing process.
-- **📚 Cheatsheet:** Keep a handy, concise summary of regex syntax and usage at your fingertips for
-  quick reference.
-- **🔬 Playground:** Freely experiment and test your regex patterns in a dedicated sandbox
-  environment without limitations.
-- **💡 Practice:** Coming soon - Challenge yourself with a wide range of practical exercises to
-  refine and enhance your regex skills.
+- **Step-by-Step Learning:** Interactive lessons that progress from the basics to advanced
+  patterns, one small step at a time.
+- **Courses:** Two lesson tracks are available: [Regex 101](https://regexlearn.com/learn/regex101)
+  for fundamentals and [Regex for SEO](https://regexlearn.com/learn/regex-for-seo) for practical,
+  search-focused usage.
+- **Cheatsheet:** A concise summary of regex syntax for quick reference while you work.
+- **Playground:** A sandbox to freely write and test your regex patterns.
+- **Shortcut Friendly:** Move through lessons entirely from the keyboard.
 
-<br>
+## Supported Languages
 
-## **🌍 Supported Languages**
+Available in 16 languages:
 
-**[regexlearn.com](http://regexlearn.com/)** is available in the following languages, with more on
-the way:
-
-- 🇺🇸 English
-- 🇹🇷 Turkish
-- 🇷🇺 Russian
-- 🇪🇸 Spanish
-- 🇨🇳 Chinese
-- 🇩🇪 German
-- 🇺🇦 Ukrainian
-- 🇫🇷 French
-- 🇵🇱 Polish
-- 🇰🇷 Korean
-- 🇧🇷 Brazilian Portuguese
-- 🇨🇿 Czech
-- 🇬🇪 Georgian
-- 🇮🇷 Persian
-- 🇮🇹 Italian
-- 🇸🇦 Arabic
+🇺🇸 English, 🇹🇷 Turkish, 🇷🇺 Russian, 🇪🇸 Spanish, 🇨🇳 Chinese, 🇩🇪 German, 🇺🇦 Ukrainian, 🇫🇷 French,
+🇵🇱 Polish, 🇰🇷 Korean, 🇧🇷 Brazilian Portuguese, 🇨🇿 Czech, 🇬🇪 Georgian, 🇮🇷 Persian, 🇮🇹 Italian,
+🇸🇦 Arabic
 
 ### Requested Translations
 
@@ -51,27 +33,48 @@ the way:
 - 🇻🇳 Vietnamese [(Issue)](https://github.com/aykutkardas/regexlearn.com/issues/329)
 - 🇮🇩 Indonesian [(Issue)](https://github.com/aykutkardas/regexlearn.com/issues/335)
 
-Interested in adding your language? Please
-**[create an issue](https://github.com/aykutkardas/regexlearn.com/issues/new)** and let us know!
+Speak a language that isn't listed? Adding it is a single pull request: copy the
+[`en`](src/localization/en) folder in [`src/localization/`](src/localization), translate the JSON
+files, and you've brought regex to every developer who reads in your language. Prefer to start a
+conversation first?
+**[Open an issue](https://github.com/aykutkardas/regexlearn.com/issues/new)**.
 
-<br>
+## Development
+
+Built with [Next.js](https://nextjs.org/), [TypeScript](https://www.typescriptlang.org/), and
+[Tailwind CSS](https://tailwindcss.com/).
+
+```bash
+yarn          # install dependencies
+yarn dev      # start the dev server at http://localhost:3003
+yarn build    # production build
+```
+
+## Contributing
+
+RegexLearn is shaped by its community: lessons, translations, and fixes in this repo came from
+contributors around the world. Spotted a typo, a bug, or an awkward translation? A small pull
+request is all it takes to improve the experience for thousands of learners.
+
+- Please target the **`develop`** branch with your pull requests. It is the default branch and the
+  integration branch for upcoming releases.
+- The `main` branch is production: every commit on it is deployed to
+  [regexlearn.com](https://regexlearn.com/) automatically, so it only moves on releases.
 
 ## Our Sponsors
 
 [![Ahrefs](preview/ahrefs.png)](https://ahrefs.com/) [![Wope](preview/wope.png)](https://wope.com)
 
-<br>
+## Sponsorship
 
-## **💖 Sponsorship**
+RegexLearn is free for everyone, and sponsors are what keep it that way. Sponsorship puts your
+brand in front of a worldwide audience of developers at the exact moment they're learning. Want
+your logo up there? **[Get in touch](mailto:aykutkrds@gmail.com)**.
 
-This project is a labor of love, developed as open-source during our free time. If you'd like to
-support our mission and be featured as a sponsor, please
-**[contact us](mailto:aykutkrds@gmail.com)**. Your generous contribution allows us to continue
-enhancing regexlearn.com, fostering growth and learning within the community.
 
-[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/aykutkardas)
+## License
 
-<br>
+This project is licensed under the MIT License. See the [LICENCE](LICENCE) file for details.
 
 ## Preview
 
@@ -80,5 +83,3 @@ enhancing regexlearn.com, fostering growth and learning within the community.
 ![Preview](preview/preview-learn.png)
 
 ![Preview](preview/preview-cheatsheet.png)
-
-<br>
