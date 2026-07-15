@@ -7,6 +7,7 @@
   "general.watch": "觀看",
   "general.start": "開始",
   "general.continue": "繼續",
+  "general.resetProgress": "重設進度",
   "general.completedStep": "完成步驟！",
   "general.hintQuestion": "顯示解答",
   "general.reportStep": "回報問題",

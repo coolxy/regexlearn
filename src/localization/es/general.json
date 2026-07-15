@@ -7,6 +7,7 @@
   "general.watch": "Reloj",
   "general.start": "Comienzo",
   "general.continue": "Continuar",
+  "general.resetProgress": "Reiniciar progreso",
   "general.completedStep": "¡Paso Completado!",
   "general.hintQuestion": "Mostrar respuesta",
   "general.reportStep": "Reportar un problema",

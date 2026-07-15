@@ -7,6 +7,7 @@
   "general.watch": "ყურება",
   "general.start": "დაწყება",
   "general.continue": "გაგრძელება",
+  "general.resetProgress": "პროგრესის განულება",
   "general.completedStep": "ეტაპი გადალახულია!",
   "general.hintQuestion": "პასუხის ჩვენება",
   "general.reportStep": "პრობლემის შეტყობინება",

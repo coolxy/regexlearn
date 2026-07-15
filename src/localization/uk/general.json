@@ -6,6 +6,7 @@
   "general.text": "Текст",
   "general.start": "Почати",
   "general.continue": "Продовжити",
+  "general.resetProgress": "Скинути прогрес",
   "general.completedStep": "Крок завершено!",
   "general.hintQuestion": "Показати відповідь",
   "general.reportStep": "Повідомити про проблему",

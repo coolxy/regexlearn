@@ -7,6 +7,7 @@
   "general.watch": "تماشا",
   "general.start": "شروع",
   "general.continue": "ادامه",
+  "general.resetProgress": "بازنشانی پیشرفت",
   "general.completedStep": "مرحله تکمیل شد!",
   "general.hintQuestion": "نمایش پاسخ",
   "general.reportStep": "گزارش مشکل",

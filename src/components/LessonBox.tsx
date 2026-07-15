@@ -47,6 +47,13 @@ const LessonBox = ({ data, lock, bgColor }: Props) => {
 
   const startText = formatMessage({ id: isVisit ? 'general.continue' : 'general.start' });
 
+  const resetProgress = e => {
+    e.preventDefault();
+    e.stopPropagation();
+    lookie.remove(`lesson.${data.key}`);
+    setIsVisit(false);
+  };
+
   const direction = useLanguageDirection();
   const arrowDirectionName = direction === 'rtl' ? 'arrow-left' : 'arrow-right';
 
@@ -67,6 +74,16 @@ const LessonBox = ({ data, lock, bgColor }: Props) => {
         </p>
         {!lock && (
           <div className="flex items-end text-sm flex-1 justify-between">
+            {isVisit && (
+              <span
+                role="button"
+                tabIndex={0}
+                onClick={resetProgress}
+                className="inline-flex items-center bg-neutral-800/60 px-2 py-1 rounded-md text-xs text-neutral-400 hover:text-neutral-50"
+              >
+                {formatMessage({ id: 'general.resetProgress' })}
+              </span>
+            )}
             <div className="inline-flex items-center text-sm text-neutral-300 absolute top-5 ltr:right-4 rtl:left-4 space-x-2">
               {data.videoCount && (
                 <span className="inline-flex items-center rtl:right-0 ">

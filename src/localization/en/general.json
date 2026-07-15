@@ -7,6 +7,7 @@
   "general.watch": "Watch",
   "general.start": "Start",
   "general.continue": "Continue",
+  "general.resetProgress": "Reset Progress",
   "general.completedStep": "Step Completed!",
   "general.hintQuestion": "Show Answer",
   "general.reportStep": "Report a Problem",

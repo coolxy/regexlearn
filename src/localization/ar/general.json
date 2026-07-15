@@ -7,6 +7,7 @@
   "general.watch": "مشاهدة",
   "general.start": "ابدأ",
   "general.continue": "متابعة",
+  "general.resetProgress": "إعادة تعيين التقدم",
   "general.completedStep": "الخطوة مكتملة!",
   "general.hintQuestion": "عرض الإجابة",
   "general.reportStep": "الإبلاغ عن مشكلة",

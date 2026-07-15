@@ -7,6 +7,7 @@
   "general.watch": "İzle",
   "general.start": "Başla",
   "general.continue": "Devam Et",
+  "general.resetProgress": "İlerlemeyi Sıfırla",
   "general.completedStep": "Adım Tamamlandı.",
   "general.hintQuestion": "Cevabı Göster",
   "general.reportStep": "Sorun Bildir",

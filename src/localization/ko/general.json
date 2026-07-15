@@ -7,6 +7,7 @@
   "general.watch": "손목 시계",
   "general.start": "시작",
   "general.continue": "계속하다",
+  "general.resetProgress": "진행 상황 초기화",
   "general.completedStep": "단계 성공!",
   "general.hintQuestion": "답안 보기",
   "general.reportStep": "오류 제기",

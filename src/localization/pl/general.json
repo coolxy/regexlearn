@@ -7,6 +7,7 @@
   "general.watch": "Obejrzyj",
   "general.start": "Rozpocznij",
   "general.continue": "Kontynuuj",
+  "general.resetProgress": "Zresetuj postęp",
   "general.completedStep": "Krok ukończony!",
   "general.hintQuestion": "Pokaż odpowiedź",
   "general.reportStep": "Zgłoś problem",
