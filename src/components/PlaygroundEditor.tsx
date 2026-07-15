@@ -101,11 +101,20 @@ const Playground = () => {
       return EditorState.createWithContent(content);
     }
 
+    const blockCount = editorState.getCurrentContent().getBlockMap().size;
+
     function findWithRegex(content: ContentBlock, callback: Function) {
       const isMultiple = flags.includes('m');
-      const isNeededMultiple = regex.startsWith('^') || regex.endsWith('$');
+      const currentRow = rowIndex;
 
-      if (!isMultiple && isNeededMultiple && rowIndex > 0) return;
+      rowIndex++;
+
+      // Without the multiline flag, `^` only matches the start of the whole
+      // text (first row) and `$` only its end (last row).
+      if (!isMultiple) {
+        if (regex.startsWith('^') && currentRow > 0) return;
+        if (regex.endsWith('$') && currentRow < blockCount - 1) return;
+      }
 
       const isGlobal = flags.includes('g');
 
@@ -127,8 +136,6 @@ const Playground = () => {
       if (matches.length) {
         matchCount++;
       }
-
-      rowIndex++;
     }
 
     function handleStrategy(content: ContentBlock, callback: Function) {

@@ -56,12 +56,12 @@ const FlagSelect = ({ flags, setFlags }: FlagSelectProps) => {
   useEventListener('keyup', handleFlagKey);
 
   return (
-    <Popover className="select-none cursor-pointer">
+    <Popover className="relative select-none cursor-pointer">
       <Popover.Button className="cursor-pointer text-neutral-300 hover:bg-neutral-700 mr-[2px] ml-3 w-9 border-dashed border p-2 text-sm h-9 flex items-center justify-center rounded-md border-neutral-600 focus:ring-0 focus:bg-neutral-700">
         <Icon icon="flag" size={14} />
       </Popover.Button>
 
-      <Popover.Panel className="absolute rtl:left-0 z-10 mt-2 p-2 border w-48 border-neutral-700 bg-neutral-800 shadow-md rounded-md">
+      <Popover.Panel className="absolute right-0 rtl:left-0 rtl:right-auto z-10 mt-2 p-2 border w-48 border-neutral-700 bg-neutral-800 shadow-md rounded-md">
         {flagList.map(({ name, code, command, regex }) => (
           <div className="inline-flex w-full justify-between text-xs items-center" key={name}>
             <Checkbox
