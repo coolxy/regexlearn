@@ -1,6 +1,6 @@
 {
   "landing.title": "Learn Regex step by step, from zero to advanced.",
-  "landing.description": "Learning Regex is easier than you think. You can use this tool to easily `learn`, `practice`, `test` and `share` Regex.",
+  "landing.description": "Learning Regex is easier than you think. You can use this tool to easily `learn`, `practice` and `test` Regex.",
   "landing.imageAltText": "Illustration of a relaxed man with his legs on the table.",
 
   "section.learn.title": "Learn",
@@ -13,7 +13,7 @@
   "section.cheatsheet.imageAltText": "Illustration of a man viewing pages through binoculars.",
 
   "section.playground.title": "Playground",
-  "section.playground.content": "If you want to generate a Regex, you can easily build and test your Regex pattern via the Playground. As a Regex tester, you can validate and share your Regex with others for collaborative work.",
+  "section.playground.content": "If you want to generate a Regex, you can easily build, validate and test your Regex pattern in the Playground.",
   "section.playground.imageAltText": "Illustration of a cat about to drop a full glass.",
 
   "section.practice.title": "Practice",

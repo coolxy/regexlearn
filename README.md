@@ -5,7 +5,7 @@
 [![Stars](https://img.shields.io/github/stars/aykutkardas/regexlearn.com?style=flat)](https://github.com/aykutkardas/regexlearn.com/stargazers)
 
 **[regexlearn.com](https://regexlearn.com/)** is a free, open-source platform that turns regular
-expressions from a black art into a skill you can pick up in an afternoon. Learn step by step in 17
+expressions from a black art into a skill you can pick up in an afternoon. Learn step by step in 18
 languages, keep the cheatsheet nearby, and test your patterns live in the playground.
 
 ## Features
@@ -16,20 +16,19 @@ languages, keep the cheatsheet nearby, and test your patterns live in the playgr
   for fundamentals and [Regex for SEO](https://regexlearn.com/learn/regex-for-seo) for practical,
   search-focused usage.
 - **Cheatsheet:** A concise summary of regex syntax for quick reference while you work.
-- **Playground:** A sandbox to freely write and test your regex patterns.
+- **Playground:** A private, browser-based sandbox to write and test regex patterns locally.
 - **Shortcut Friendly:** Move through lessons entirely from the keyboard.
 
 ## Supported Languages
 
-Available in 17 languages:
+Available in 18 languages:
 
 🇺🇸 English, 🇹🇷 Turkish, 🇷🇺 Russian, 🇪🇸 Spanish, 🇨🇳 Chinese (Simplified), 🇹🇼 Chinese (Traditional),
 🇩🇪 German, 🇺🇦 Ukrainian, 🇫🇷 French, 🇵🇱 Polish, 🇰🇷 Korean, 🇧🇷 Brazilian Portuguese, 🇨🇿 Czech,
-🇬🇪 Georgian, 🇮🇷 Persian, 🇮🇹 Italian, 🇸🇦 Arabic
+🇬🇪 Georgian, 🇮🇷 Persian, 🇮🇹 Italian, 🇸🇦 Arabic, 🇧🇩 Bengali
 
 ### Requested Translations
 
-- 🇧🇩 Bengali [(Issue)](https://github.com/aykutkardas/regexlearn.com/issues/304)
 - 🇻🇳 Vietnamese [(Issue)](https://github.com/aykutkardas/regexlearn.com/issues/329)
 - 🇮🇩 Indonesian [(Issue)](https://github.com/aykutkardas/regexlearn.com/issues/335)
 
@@ -49,6 +48,9 @@ yarn          # install dependencies
 yarn dev      # start the dev server at http://localhost:3003
 yarn build    # production build
 ```
+
+Local environment variables belong in `.env` or one of Next.js's `.env.*.local` files. These files
+are ignored by Git and must not contain values intended for source control.
 
 ## Contributing
 

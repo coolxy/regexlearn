@@ -3,9 +3,6 @@ import 'draft-js/dist/Draft.css';
 import { useState, useEffect, useRef, FormEvent } from 'react';
 import { useIntl } from 'react-intl';
 import cx from 'clsx';
-import { parse } from 'query-string';
-import axios from 'axios';
-import { Toaster, toast } from 'react-hot-toast';
 
 import {
   Editor,
@@ -18,10 +15,6 @@ import {
 
 import setCaretPosition from 'src/utils/setCaretPosition';
 import FlagSelect from './FlagSelect';
-import Button, { ButtonVariants } from './Button';
-import copy from 'copy-to-clipboard';
-
-axios.defaults.baseURL = process.env.NEXT_PUBLIC_API_BASE_URL;
 
 function myKeyBindingFn(e): string | null {
   if (e.ctrlKey && e.key.toLowerCase() === 'm') {
@@ -45,18 +38,11 @@ const Playground = () => {
   const { formatMessage } = useIntl();
   const regexInput = useRef<HTMLInputElement>(null);
   const editor = useRef(null);
-  const [hasChange, setHasChange] = useState(false);
 
   const [state, setState] = useState({
     regex: '',
     flags: '',
     editorState: EditorState.createEmpty(),
-  });
-
-  const [initial, setInitial] = useState({
-    regex: state.regex,
-    flags: state.flags,
-    text: state.editorState?.getCurrentContent()?.getPlainText() || '',
   });
 
   const onChangeFlags = flags => {
@@ -75,21 +61,15 @@ const Playground = () => {
       flags: newFlags,
       editorState: checkRegex(state.regex, newFlags, state.editorState),
     });
-    setHasChange(initial.flags !== newFlags);
   };
 
   const onChangeRegex = (event: FormEvent<HTMLInputElement>) => {
     const regex = event?.currentTarget?.value || '';
     setState({ ...state, regex, editorState: checkRegex(regex, state.flags, state.editorState) });
-    setHasChange(initial.regex !== regex);
   };
 
   const onChangeContent = (editorState: EditorState) => {
     setState({ ...state, editorState });
-    const nextText = editorState.getCurrentContent().getPlainText();
-    if (initial.text !== nextText) {
-      setHasChange(true);
-    }
   };
 
   const checkRegex = (regex, flags, editorState) => {
@@ -154,59 +134,15 @@ const Playground = () => {
     return EditorState.createWithContent(editorState.getCurrentContent(), HighlightDecorator);
   };
 
-  const handleShare = () => {
-    axios
-      .post('/shares', {
-        regex: state.regex,
-        flags: state.flags,
-        text: state.editorState.getCurrentContent().getPlainText(),
-      })
-      .then(res => {
-        history.replaceState(null, '', `?id=${res.data._id}`);
-        setInitial({
-          regex: state.regex,
-          flags: state.flags,
-          text: state.editorState.getCurrentContent().getPlainText(),
-        });
-        setHasChange(false);
-        copy(window.location.href);
-        toast.success(formatMessage({ id: 'general.shareLinkCopied' }));
-      })
-      .catch(() => {
-        toast.error(formatMessage({ id: 'general.somethingWentWrong' }));
-      });
-  };
-
   useEffect(() => {
-    const { id } = parse(window.location.search);
-
-    if (!id) {
-      const regex = '[A-Z]\\w+';
-      const flags = 'g';
-      setState({
-        regex,
-        flags,
-        editorState: checkRegex(regex, flags, EditorState.createWithContent(initialContent)),
-      });
-      setInitial({ regex: state.regex, flags: state.flags, text: initialContent.getPlainText() });
-      setCaretPosition(regexInput?.current, state.regex.length);
-      return;
-    }
-
-    axios.get(`/shares/${id}`).then(res => {
-      const { regex, flags, text } = res.data;
-      setState({
-        flags,
-        regex,
-        editorState: checkRegex(
-          regex,
-          flags,
-          EditorState.createWithContent(ContentState.createFromText(text)),
-        ),
-      });
-      setInitial({ regex, flags, text });
-      setCaretPosition(regexInput?.current, regex.length);
+    const regex = '[A-Z]\\w+';
+    const flags = 'g';
+    setState({
+      regex,
+      flags,
+      editorState: checkRegex(regex, flags, EditorState.createWithContent(initialContent)),
     });
+    setCaretPosition(regexInput.current, regex.length);
   }, []);
 
   return (
@@ -235,15 +171,6 @@ const Playground = () => {
           </span>
           <FlagSelect flags={state.flags} setFlags={onChangeFlags} />
         </div>
-        {/* [TODO]: Temporarily disabled */}
-        {/* <Button
-          className="h-12 py-0 ml-2 w-fit relative whitespace-nowrap"
-          variant={ButtonVariants.Primary}
-          onClick={handleShare}
-          disabled={!hasChange}
-        >
-          {formatMessage({ id: 'general.share' })}
-        </Button> */}
       </div>
 
       <div
@@ -273,12 +200,6 @@ const Playground = () => {
           </div>
         </div>
       </div>
-      <Toaster
-        position="top-center"
-        toastOptions={{
-          className: 'dark:bg-neutral-700 dark:text-neutral-50 text-sm',
-        }}
-      />
     </>
   );
 };
