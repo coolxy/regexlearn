@@ -20,17 +20,6 @@ const PagePlayground = () => (
         <div className="h-20 min-h-[70px] border-t py-2 flex flex-col items-center justify-between border-neutral-700 sticky bottom-0">
           <div className="flex gap-x-2 justify-center">
             <a
-              href="https://github.com/sponsors/aykutkardas"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Sponsor Me"
-              title="Sponsor Me"
-            >
-              <div className="w-6 h-6 cursor-pointer hover:scale-110 transition inline-flex items-center justify-center rounded-full bg-gradient-to-tr from-purple-600 to-pink-500 shadow-xl">
-                <Icon icon="hearth" className="text-white" size={14} />
-              </div>
-            </a>
-            <a
               href="https://www.buymeacoffee.com/aykutkardas"
               target="_blank"
               rel="noreferrer"
