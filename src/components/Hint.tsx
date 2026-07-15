@@ -16,16 +16,23 @@ interface Props {
 const Hint = ({ regex, flags, hiddenFlags }: Props) => {
   const popoverButtonRef = useRef<HTMLButtonElement>(null);
 
+  const blockHintKey = e => {
+    if (e.altKey && e.code === 'KeyH') {
+      e.preventDefault();
+    }
+  };
+
   const toggleShow = e => {
-    e.preventDefault();
     const lastActiveElement = window.document.activeElement;
 
-    if (e.altKey && e.key.toLowerCase() === 'h') {
+    if (e.altKey && e.code === 'KeyH') {
+      e.preventDefault();
       popoverButtonRef.current.click();
       (lastActiveElement as HTMLElement).focus();
     }
   };
 
+  useEventListener('keydown', blockHintKey);
   useEventListener('keyup', toggleShow);
 
   return (
