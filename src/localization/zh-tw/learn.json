@@ -42,7 +42,7 @@
   "steps.quantifier.title": "大括號 - 1",
   "steps.quantifier.description": "我們在結尾加上大括號 `{n}` 來表示我們希望字元吻合的次數。例如說，表示字母 `e` 只能吻合 `2` 次。",
   "steps.quantifierMin.title": "大括號 - 2",
-  "steps.quantifierMin.description": "要來表示某個字元出現的最少吻合次數，我們在字元後立即寫出我們希望出現的最少次數，後面跟著逗號 `,`，並用大括號 `{n, }` 包起來。例如說，表示以下字母 `e` 最少吻合 `3` 次。",
+  "steps.quantifierMin.description": "要來表示某個字元出現的最少吻合次數，我們在字元後立即寫出我們希望出現的最少次數，後面跟著逗號 `,`，並用大括號 `{n,}` 包起來。例如說，表示以下字母 `e` 最少吻合 `3` 次。",
   "steps.quantifierRange.title": "大括號 - 3",
   "steps.quantifierRange.description": "要來表示某個字元的吻合次數範圍，我們寫大括號 `{x,y}` 裡頭寫出開始到結尾的區間。例如說，這表示接續的字母 `e` 只可以吻合`1` 到 `3` 次。",
   "examples.asterisk.title": "練習：星號 `*`",

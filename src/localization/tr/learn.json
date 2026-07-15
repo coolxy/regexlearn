@@ -63,7 +63,7 @@
   "steps.quantifier.description": "Bir karakterin belirli bir sayıda geçmesini ifade etmek için sonuna kaç kere geçmesini istediğimizle birlikte süslü parantezleri `{n}` yazarız. Örneğin aşağıdaki `e` harfinin sadece `2` kere geçebileceğini belirtin.",
 
   "steps.quantifierMin.title": "Süslü Parantezler - 2",
-  "steps.quantifierMin.description": "Bir karakterin en az belirli bir sayıda geçmesini ifade etmek için karekterin sonuna en az kaç kere geçmesini istediğimizi sonuna virgül `,` ile birlikte süslü parantezlerin `{n, }` içine yazarız. Örneğin aşağıdaki `e` harfinin en az `3` kez geçebileceğini belirtin.",
+  "steps.quantifierMin.description": "Bir karakterin en az belirli bir sayıda geçmesini ifade etmek için karekterin sonuna en az kaç kere geçmesini istediğimizi sonuna virgül `,` ile birlikte süslü parantezlerin `{n,}` içine yazarız. Örneğin aşağıdaki `e` harfinin en az `3` kez geçebileceğini belirtin.",
 
   "steps.quantifierRange.title": "Süslü Parantezler - 3",
   "steps.quantifierRange.description": "Bir karakterin belirli bir sayı aralığında geçmesini ifade etmek için sonuna geçmesini istediğimiz aralıkla birlikte süslü parantezleri `{x,y}` yazarız. Örneğin aşağıdaki `e` harfinin sadece `1` ile `3` arasında geçebileceğini belirtin.",

@@ -63,7 +63,7 @@
   "steps.quantifier.description": "Um eine bestimmte Anzahl von Vorkommen eines Zeichens auszudrücken, schreiben wir geschweifte Klammern `{n}` zusammen mit der Häufigkeit, mit der es am Ende vorkommen soll. Geben Sie zum Beispiel Folgendes an Buchstabe `e` darf nur `2` mal vorkommen.",
 
   "steps.quantifierMin.title": "Geschweifte Klammern - 2",
-  "steps.quantifierMin.description": "Um mindestens eine bestimmte Anzahl von Vorkommen eines Zeichens auszudrücken, schreiben wir das Ende des Zeichens mindestens wie oft es vorkommen soll, mit einem Komma `,` am Ende, und in geschweiften Klammern `{n, }`. Geben Sie zum Beispiel an, dass der folgende Buchstabe `e` mindestens `3` Mal vorkommen kann.",
+  "steps.quantifierMin.description": "Um mindestens eine bestimmte Anzahl von Vorkommen eines Zeichens auszudrücken, schreiben wir das Ende des Zeichens mindestens wie oft es vorkommen soll, mit einem Komma `,` am Ende, und in geschweiften Klammern `{n,}`. Geben Sie zum Beispiel an, dass der folgende Buchstabe `e` mindestens `3` Mal vorkommen kann.",
 
   "steps.quantifierRange.title": "Geschweifte Klammern - 3",
   "steps.quantifierRange.description": "Um das Vorkommen eines Zeichens in einem bestimmten Zahlenbereich auszudrücken, schreiben wir geschweifte Klammern `{x,y}` mit dem Intervall, das wir bis zum Ende gehen möchten. Geben Sie zum Beispiel an, dass die der folgende Buchstabe `e` darf nur zwischen `1` und `3` vorkommen.",

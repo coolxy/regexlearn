@@ -63,7 +63,7 @@
   "steps.quantifier.description": "K vyjádření určitého počtu výskytů znaku napíšeme na konci kudrlinky `{n}` spolu s tím, kolikrát chceme, aby se vyskytoval. Například naznačte, že následující písmeno `e` se může vyskytovat pouze `2` krát.",
 
   "steps.quantifierMin.title": "Kudrlinky - 2",
-  "steps.quantifierMin.description": "Pro vyjádření alespoň určitého počtu výskytů znaku napíšeme ihned po znaku, kolikrát bychom si přáli, aby se vyskytoval, následované čárkou `,` a zabaleno do kudrlinek `{n, }`. Například naznačte, že následující písmeno `e` se musí vyskytovat alespoň `3` krát.",
+  "steps.quantifierMin.description": "Pro vyjádření alespoň určitého počtu výskytů znaku napíšeme ihned po znaku, kolikrát bychom si přáli, aby se vyskytoval, následované čárkou `,` a zabaleno do kudrlinek `{n,}`. Například naznačte, že následující písmeno `e` se musí vyskytovat alespoň `3` krát.",
 
   "steps.quantifierRange.title": "Kudrlinky - 3",
   "steps.quantifierRange.description": "Pro vyjádření výskytu znaku v určitém rozsahu napíšeme kudrlinky `{x,y}` s rozsahem od `x` do `y`. Například naznačte, že následující písmeno `e` se může vyskytovat pouze `1` až `3` krát.",

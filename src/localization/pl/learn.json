@@ -63,7 +63,7 @@
   "steps.quantifier.description": "Aby określić liczbę wystąpień po sobie danego znaku, umieszczamy po nim nawiasy klamrowe `{n}` razem z liczbą określającą, ile razy ma się pojawić. Na przykład, możemy wskazać, że następna litera `e` może wystąpić obok siebie dokładnie `2` razy.",
 
   "steps.quantifierMin.title": "Nawiasy klamrowe - 2",
-  "steps.quantifierMin.description": "Aby określić minimalną liczbę wystąpień po sobie danego znaku, wskazujemy przynajmniej ile razy ma się on pojawić, następnie przecinek `,` i umieszczamy to w nawiasach klamrowych `{n, }`. Na przykład, możemy wskazać, że litera `e` może wystąpić obok siebie przynajmniej `3` razy.",
+  "steps.quantifierMin.description": "Aby określić minimalną liczbę wystąpień po sobie danego znaku, wskazujemy przynajmniej ile razy ma się on pojawić, następnie przecinek `,` i umieszczamy to w nawiasach klamrowych `{n,}`. Na przykład, możemy wskazać, że litera `e` może wystąpić obok siebie przynajmniej `3` razy.",
 
   "steps.quantifierRange.title": "Nawiasy klamrowe - 3",
   "steps.quantifierRange.description": "Aby określić liczbę wystąpień znaku po sobie danego znaku w określonym zakresie, stosujemy nawiasy klamrowe `{x,y}` z podanym zakresem powtórzeń, który nas interesuje. Na przykład, możemy wskazać, że litera `e` może wystąpić po sobie tylko od `1` do `3` razy.",

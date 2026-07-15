@@ -62,7 +62,7 @@
   "steps.quantifier.description": "Para expressar um certo número de ocorrências de um caractere, escrevemos chaves `{n}` junto com a quantidade de vezes que queremos que ocorra no final. Por exemplo, indica que a próxima letra `e` pode ocorrer apenas `2` vezes.",
 
   "steps.quantifierMin.title": "Chaves - 2",
-  "steps.quantifierMin.description": "Para expressar pelo menos um certo número de ocorrências de caractere, escrevemos no final do caractere quantas vezes queremos que ocorra, com uma vírgula `,` no final, e dentro das chaves `{n, }`. Por exemplo, indica que a próxima letra `e` pode ocorrer pelo menos `3` vezes.",
+  "steps.quantifierMin.description": "Para expressar pelo menos um certo número de ocorrências de caractere, escrevemos no final do caractere quantas vezes queremos que ocorra, com uma vírgula `,` no final, e dentro das chaves `{n,}`. Por exemplo, indica que a próxima letra `e` pode ocorrer pelo menos `3` vezes.",
 
   "steps.quantifierRange.title": "Chaves - 3",
   "steps.quantifierRange.description": "Para expressar a ocorrência de um caractere em um certo intervalo de números, escrevemos chaves `{x,y}` com o intervalo que queremos no final. Por exemplo, indica que a próxima letra `e` pode ocorrer entre `1` e `3` vezes.",

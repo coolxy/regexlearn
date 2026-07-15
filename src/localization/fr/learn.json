@@ -63,7 +63,7 @@
   "steps.quantifier.description": "Pour exprimer un certain nombre d'occurrences d'un caractère, on écrit entre accolades `{n}` et on indique à la fin combien de fois on veut qu'il apparaisse. Par exemple, indiquez que la lettre suivante `e` ne peut apparaître que `2` fois.",
 
   "steps.quantifierMin.title": "Accolades - 2",
-  "steps.quantifierMin.description": "Pour exprimer au moins un certain nombre d'occurrences d'un caractère, on écrit la fin du caractère au moins combien de fois on veut qu'il apparaisse, avec une virgule `,` à la fin, et à l'intérieur d'accolades `{n, }`. Par exemple, indiquez que la lettre suivante `e` peut apparaître au moins `3` fois.",
+  "steps.quantifierMin.description": "Pour exprimer au moins un certain nombre d'occurrences d'un caractère, on écrit la fin du caractère au moins combien de fois on veut qu'il apparaisse, avec une virgule `,` à la fin, et à l'intérieur d'accolades `{n,}`. Par exemple, indiquez que la lettre suivante `e` peut apparaître au moins `3` fois.",
 
   "steps.quantifierRange.title": "Accolades - 3",
   "steps.quantifierRange.description": "Pour exprimer l'occurrence d'un caractère dans une certaine plage de nombres, on écrit entre accolades `{x,y}` l'intervalle que l'on veut aller jusqu'au bout. Par exemple, indiquez que la lettre suivante `e` ne peut apparaître qu'entre `1` et `3`.",

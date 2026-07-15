@@ -63,7 +63,7 @@
   "steps.quantifier.description": "Para expresar un cierto número de ocurrencias de un carácter, escribimos llaves `{n}` junto con la cantidad de veces que queremos que ocurra al final. Por ejemplo, indica que la siguiente letra `e` puede ocurrir solo `2` veces.",
 
   "steps.quantifierMin.title": "Llaves - 2",
-  "steps.quantifierMin.description": "Para expresar al menos un cierto número de apariciones de carácter, escribimos al final de carácter al menos cuántas veces queremos que ocurra, con una coma `,` al final, y dentro de las llaves `{n, }`. Por ejemplo, indica que la siguiente letra `e` puede ocurrir al menos `3` veces.",
+  "steps.quantifierMin.description": "Para expresar al menos un cierto número de apariciones de carácter, escribimos al final de carácter al menos cuántas veces queremos que ocurra, con una coma `,` al final, y dentro de las llaves `{n,}`. Por ejemplo, indica que la siguiente letra `e` puede ocurrir al menos `3` veces.",
 
   "steps.quantifierRange.title": "Llaves - 3",
   "steps.quantifierRange.description": "Para expresar la aparición de un carácter en un cierto rango de números, escribimos llaves `{x,y}` con el intervalo queremos ir al final. Por ejemplo, indica que la siguiente letra `e` puede ocurrir entre `1` y `3` veces.",

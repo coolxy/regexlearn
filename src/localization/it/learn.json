@@ -63,7 +63,7 @@
   "steps.quantifier.description": "Per esprimere un certo numero di occorrenze di un carattere, alla fine scriviamo le parentesi graffe `{n}` con il numero di volte che vogliamo che si verifichi. Per esempio, indica che la lettera `e` seguente può apparire solo `2` volte di seguito.",
 
   "steps.quantifierMin.title": "Parentesi graffe - 2",
-  "steps.quantifierMin.description": "Per esprimere almeno un certo numero di occorrenze di un carattere, subito dopo il carattere scriviamo almeno quante volte vogliamo che si verifichi di seguito seguito da una virgola `,` e racchiuso tra parentesi graffe `{n, }`. Per esempio, indica che la lettera `e` seguente può apparire almeno `3` volte di seguito.",
+  "steps.quantifierMin.description": "Per esprimere almeno un certo numero di occorrenze di un carattere, subito dopo il carattere scriviamo almeno quante volte vogliamo che si verifichi di seguito seguito da una virgola `,` e racchiuso tra parentesi graffe `{n,}`. Per esempio, indica che la lettera `e` seguente può apparire almeno `3` volte di seguito.",
 
   "steps.quantifierRange.title": "Parentesi graffe - 3",
   "steps.quantifierRange.description": "Per esprimere l'occorrenza di un carattere in un certo intervallo di numeri, scriviamo parentesi graffe `{x,y}` per l'intervallo inclusivo. Per esempio, indica che la lettera `e` seguente può apparire solo tra `1` e `3` volte di seguito.",

@@ -6,7 +6,7 @@
   "examples.finish.description": " ",
 
   "steps.starter.title": "Intro",
-  "steps.starter.description": "Regex is short for `Regular Expression`. It helps to match, find or manage text. Start by typing `OK` in the Regex field to proceed to the first step and access the more detailed description..",
+  "steps.starter.description": "Regex is short for `Regular Expression`. It helps to match, find or manage text. The lessons and the Playground use JavaScript's regex engine, where a pattern is written as `/pattern/flags`. Start by typing `OK` in the Regex field to proceed to the first step and access the more detailed description.",
 
   "steps.whatIsRegex.title": "What is Regular Expressions `Regex`?",
   "steps.whatIsRegex.description": "Regular Expressions are a string of characters that express a search pattern. Often abbreviated as `Regex` or `Regexp`. It is especially used to find or replace words in texts. In addition, we can test whether a text complies with the rules we set.\\n\\n For example, let's say you have a list of filenames. And you only want to find files with the `pdf` extension. Following typing an expression `^\\w+\\.pdf$` will work. The meaning of the definitions in this expression will become clearer as the steps progress.",
@@ -63,7 +63,7 @@
   "steps.quantifier.description": "To express a certain number of occurrences of a character,  at the end we write curly braces `{n}` along with how many times we want it to occur. For example, indicate that the following letter `e` can occur only `2` times in a row.",
 
   "steps.quantifierMin.title": "Curly Braces - 2",
-  "steps.quantifierMin.description": "To express at least a certain number of occurrences of a character, immediately after the character we write at least how many times we want it to occur in a row followed by a comma `,` and wrapped inside curly braces `{n, }`. For example, indicate that the following letter `e` can occur at least `3` times in a row.",
+  "steps.quantifierMin.description": "To express at least a certain number of occurrences of a character, immediately after the character we write at least how many times we want it to occur in a row followed by a comma `,` and wrapped inside curly braces `{n,}`. For example, indicate that the following letter `e` can occur at least `3` times in a row.",
 
   "steps.quantifierRange.title": "Curly Braces - 3",
   "steps.quantifierRange.description": "To express the occurrence of a character in a certain number range, we write curly braces `{x,y}` for the inclusive interval. For example, indicate that the following letter `e` can only occur between `1` and `3` times in a row.",
@@ -93,7 +93,7 @@
   "steps.groupReference.description": "Below, we have two groups: `(ha)` and `(haa)`. When we want to reference these groups later in the pattern, we use `\\1` for the first group and `\\2` for the second group. For example, in the pattern `(ha)-\\1,(haa)-\\2`, the `-` is outside the groups, and `\\1` refers to `ha` while `\\2` refers to `haa`. Type `\\2` at the end of the expression to refer to the second group.",
 
   "steps.nonCapturingGrouping.title": "Parentheses `(?: )`: Non-capturing Grouping",
-  "steps.nonCapturingGrouping.description": "You can group an expression and ensure that it is not captured by references. For example, below are two groups. However, the first group reference we denote with `\\1` actually indicates the second group, as the first is a non-capturing group.",
+  "steps.nonCapturingGrouping.description": "Adding `?:` right after the opening parenthesis, like `(?:ha)`, makes a group non-capturing: it still groups the expression, but its match is not stored, so it cannot be referenced. Below, the first group `(?:ha)` is non-capturing. That is why the reference `\\1` refers to the capturing group `(haa)`.",
 
   "steps.pipeCharacter.title": "Pipe Character `|`",
   "steps.pipeCharacter.description": "It allows to specify that an expression can be in different expressions. Thus, all possible statements are written separated by the pipe sign `|`. This differs from charset `[abc]`, charsets operate at the character level. Alternatives are at the expression level. For example, the following expression would select both `cat` and `rat`. Add another pipe sign `|` to the end of the expression and type `dog` so that all words are selected.",

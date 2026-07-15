@@ -63,7 +63,7 @@
   "steps.quantifier.description": "우리는 문자의 발생 횟수를 표현하기 위해 마지막에 몇 번이 일어나길 원하는지 중괄호 `{n}`로 나타냅니다. 예를 들어, 다음 문자 `e`는 `2`번만 나타남을 의미합니다.",
 
   "steps.quantifierMin.title": "중괄호 - 2",
-  "steps.quantifierMin.description": "최소한 문자의 발생 횟수를 표현하기 위해, 우리는 끝에는 쉼표 ''와, 안쪽에는 중괄호 `{n, }`를 붙여서 문자가 최소한 몇번 나타나는지 표현합니다. 예를 들어, 다음 문자 `e`는 `3`번이상 나타남을 의미합니다",
+  "steps.quantifierMin.description": "최소한 문자의 발생 횟수를 표현하기 위해, 우리는 끝에는 쉼표 ''와, 안쪽에는 중괄호 `{n,}`를 붙여서 문자가 최소한 몇번 나타나는지 표현합니다. 예를 들어, 다음 문자 `e`는 `3`번이상 나타남을 의미합니다",
 
   "steps.quantifierRange.title": "중괄호 - 3",
   "steps.quantifierRange.description": "특정 숫자 범위에서 문자의 발생을 표현하기 위해 범위내에 중괄호 `{x,y}`를 씁니다. 예를 들어, `e`는 `1` 과 `3`사이에서만 나타날 수 있습니다.",
