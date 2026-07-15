@@ -2,7 +2,7 @@ import { useRouter } from 'next/router';
 import { Popover } from '@headlessui/react';
 
 import getIntlPath from 'src/utils/getIntlPath';
-import { langNames } from 'src/localization';
+import { defaultLocale, langNames } from 'src/localization';
 
 const langList = Object.keys(langNames).map(langKey => ({
   value: langKey,
@@ -11,11 +11,10 @@ const langList = Object.keys(langNames).map(langKey => ({
 
 const LanguageSelect = () => {
   const { pathname, query } = useRouter();
-  
-  
-  let currentLang = langNames[query.lang as string];
+  const currentLocale = (query.lang as string) || defaultLocale;
+  const currentLang = langNames[currentLocale];
 
-  const availableLangList = langList.filter(({ value }) => query.lang !== value);
+  const availableLangList = langList.filter(({ value }) => currentLocale !== value);
 
   return (
     <Popover className="select-none cursor-pointer">

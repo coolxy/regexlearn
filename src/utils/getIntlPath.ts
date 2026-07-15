@@ -8,13 +8,19 @@ type GetIntlPathArgs = {
 };
 
 const getIntlPath = ({ href, lang, query = {} }: GetIntlPathArgs): string => {
+  const targetLang = Array.isArray(lang) ? lang[0] : lang || defaultLocale;
   let pathname = href;
 
-  if (lang === defaultLocale) {
-    pathname = pathname.replace('/[lang]', `/`).replace(/\/\//g, '/');
+  if (pathname.includes('/[lang]')) {
+    pathname = pathname.replace(
+      '/[lang]',
+      targetLang === defaultLocale ? '/' : `/${targetLang}`,
+    );
+  } else if (targetLang !== defaultLocale) {
+    pathname = `/${targetLang}${pathname === '/' ? '' : pathname}`;
   }
 
-  pathname = pathname.replace('/[lang]', `/${lang}`);
+  pathname = pathname.replace(/\/\//g, '/');
 
   Object.keys(query).forEach(key => {
     pathname = pathname.replace(`[${key}]`, `${query[key]}`);
