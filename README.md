@@ -5,7 +5,7 @@
 [![Stars](https://img.shields.io/github/stars/aykutkardas/regexlearn.com?style=flat)](https://github.com/aykutkardas/regexlearn.com/stargazers)
 
 **[regexlearn.com](https://regexlearn.com/)** is a free, open-source platform that turns regular
-expressions from a black art into a skill you can pick up in an afternoon. Learn step by step in 18
+expressions from a black art into a skill you can pick up in an afternoon. Learn step by step in 21
 languages, keep the cheatsheet nearby, and test your patterns live in the playground.
 
 ## Features
@@ -21,16 +21,19 @@ languages, keep the cheatsheet nearby, and test your patterns live in the playgr
 
 ## Supported Languages
 
-Available in 18 languages:
+Available in 21 languages:
 
-🇺🇸 English, 🇹🇷 Turkish, 🇷🇺 Russian, 🇪🇸 Spanish, 🇨🇳 Chinese (Simplified), 🇹🇼 Chinese (Traditional),
-🇩🇪 German, 🇺🇦 Ukrainian, 🇫🇷 French, 🇵🇱 Polish, 🇰🇷 Korean, 🇧🇷 Brazilian Portuguese, 🇨🇿 Czech,
-🇬🇪 Georgian, 🇮🇷 Persian, 🇮🇹 Italian, 🇸🇦 Arabic, 🇧🇩 Bengali
-
-### Requested Translations
-
-- 🇻🇳 Vietnamese [(Issue)](https://github.com/aykutkardas/regexlearn.com/issues/329)
-- 🇮🇩 Indonesian [(Issue)](https://github.com/aykutkardas/regexlearn.com/issues/335)
+<table>
+  <tbody>
+    <tr><td>🇺🇸 English</td><td>🇹🇷 Turkish</td><td>🇷🇺 Russian</td></tr>
+    <tr><td>🇪🇸 Spanish</td><td>🇨🇳 Chinese (Simplified)</td><td>🇹🇼 Chinese (Traditional)</td></tr>
+    <tr><td>🇩🇪 German</td><td>🇺🇦 Ukrainian</td><td>🇫🇷 French</td></tr>
+    <tr><td>🇵🇱 Polish</td><td>🇰🇷 Korean</td><td>🇧🇷 Brazilian Portuguese</td></tr>
+    <tr><td>🇨🇿 Czech</td><td>🇬🇪 Georgian</td><td>🇮🇷 Persian</td></tr>
+    <tr><td>🇮🇹 Italian</td><td>🇸🇦 Arabic</td><td>🇧🇩 Bengali</td></tr>
+    <tr><td>🇯🇵 Japanese</td><td>🇮🇩 Indonesian</td><td>🇻🇳 Vietnamese</td></tr>
+  </tbody>
+</table>
 
 Speak a language that isn't listed? Adding it is a single pull request: copy the
 [`en`](src/localization/en) folder in [`src/localization/`](src/localization), translate the JSON
