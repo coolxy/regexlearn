@@ -1,7 +1,6 @@
 {
   "cheatsheet.section.title": "正規表示式小抄",
   "cheatsheet.section.description": "透過正規表示式小抄探索所有正規表示式配對模式與符號。",
-
   "cheatsheet.anchors": "錨點",
   "cheatsheet.caret.title": "字串或行的開頭",
   "cheatsheet.caret.description": "配對字串或是行的開頭。",
@@ -11,7 +10,6 @@
   "cheatsheet.wordBoundary.description": "配對文字字元或是文件結尾位置。",
   "cheatsheet.notWordBoundary.title": "非文字邊界",
   "cheatsheet.notWordBoundary.description": "配對文字字元或位置不在文字結尾。",
-
   "cheatsheet.characterClasses": "字元類型",
   "cheatsheet.characterSet.title": "字元集",
   "cheatsheet.characterSet.description": "配對在字元集的字元",
@@ -33,7 +31,6 @@
   "cheatsheet.space.description": "配對任何空白字元。",
   "cheatsheet.notSpace.title": "非空白字元",
   "cheatsheet.notSpace.description": "配對任何非空白字元。",
-
   "cheatsheet.flags": "標記",
   "cheatsheet.caseInsensitiveFlag.title": "忽略大小寫",
   "cheatsheet.caseInsensitiveFlag.description": "讓表示式忽略大小寫。",
@@ -41,23 +38,20 @@
   "cheatsheet.globalFlag.description": "確保表示式不會停在第一次吻合。",
   "cheatsheet.multilineFlag.title": "多行",
   "cheatsheet.multilineFlag.description": "如果不啟用，行開頭與結尾等於整個字串的開頭與結尾，不會為個別行作用。",
-
   "cheatsheet.groupAndReferences": "群組與參照",
   "cheatsheet.group.title": "群組",
   "cheatsheet.group.description": "將表示式群組。",
   "cheatsheet.reference.title": "參照",
   "cheatsheet.reference.description": "參照已經群組的表示式。",
-  "cheatsheet.nonCapturingGroup.title": "非補捉群組",
+  "cheatsheet.nonCapturingGroup.title": "非捕捉群組",
   "cheatsheet.nonCapturingGroup.description": "標記群組不能被參照。",
-
   "cheatsheet.lookarounds": "環顧",
   "cheatsheet.positiveLookahead.title": "正向向前選取",
   "cheatsheet.negativeLookahead.title": "負向向前選取",
   "cheatsheet.positiveLookbehind.title": "正向向後選取",
   "cheatsheet.negativeLookbehind.title": "負向向後選取",
-
   "cheatsheet.quantifiersAndAlternation": "量詞與替代建構",
-  "cheatsheet.plus.title": "正數",
+  "cheatsheet.plus.title": "加號",
   "cheatsheet.plus.description": "表示式吻合一次或多次。",
   "cheatsheet.asterisk.title": "星號",
   "cheatsheet.asterisk.description": "表示式吻合0次或多次。",
@@ -66,5 +60,5 @@
   "cheatsheet.optional.title": "選擇性的",
   "cheatsheet.optional.description": "標記表示式為選擇性的。",
   "cheatsheet.alternation.title": "替代建構",
-  "cheatsheet.alternation.description": "或者這樣可以運作，會等待其中存起來的一個表示式吻合。"
+  "cheatsheet.alternation.description": "作用像是「或」運算，只要其中一個表示式吻合即可。"
 }

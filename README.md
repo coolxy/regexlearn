@@ -5,7 +5,7 @@
 [![Stars](https://img.shields.io/github/stars/aykutkardas/regexlearn.com?style=flat)](https://github.com/aykutkardas/regexlearn.com/stargazers)
 
 **[regexlearn.com](https://regexlearn.com/)** is a free, open-source platform that turns regular
-expressions from a black art into a skill you can pick up in an afternoon. Learn step by step in 16
+expressions from a black art into a skill you can pick up in an afternoon. Learn step by step in 17
 languages, keep the cheatsheet nearby, and test your patterns live in the playground.
 
 ## Features
@@ -21,11 +21,11 @@ languages, keep the cheatsheet nearby, and test your patterns live in the playgr
 
 ## Supported Languages
 
-Available in 16 languages:
+Available in 17 languages:
 
-🇺🇸 English, 🇹🇷 Turkish, 🇷🇺 Russian, 🇪🇸 Spanish, 🇨🇳 Chinese, 🇩🇪 German, 🇺🇦 Ukrainian, 🇫🇷 French,
-🇵🇱 Polish, 🇰🇷 Korean, 🇧🇷 Brazilian Portuguese, 🇨🇿 Czech, 🇬🇪 Georgian, 🇮🇷 Persian, 🇮🇹 Italian,
-🇸🇦 Arabic
+🇺🇸 English, 🇹🇷 Turkish, 🇷🇺 Russian, 🇪🇸 Spanish, 🇨🇳 Chinese (Simplified), 🇹🇼 Chinese (Traditional),
+🇩🇪 German, 🇺🇦 Ukrainian, 🇫🇷 French, 🇵🇱 Polish, 🇰🇷 Korean, 🇧🇷 Brazilian Portuguese, 🇨🇿 Czech,
+🇬🇪 Georgian, 🇮🇷 Persian, 🇮🇹 Italian, 🇸🇦 Arabic
 
 ### Requested Translations
 
