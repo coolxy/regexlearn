@@ -104,7 +104,7 @@
   "steps.caret.title": "Signo Caret `^`:\\nSelección por inicio de la línea",
   "steps.caret.description": "Estamos usando `[0-9]` para encontrar números. Para encontrar solo números al comienzo de una línea, anteponemos esta expresión con el signo `^` caret.",
 
-  "steps.dollar.title": "Signo pesos `$`:\\nSelección por inicio de la línea",
+  "steps.dollar.title": "Signo de dólar `$`:\\nSelección por el final de la línea",
   "steps.dollar.description": "Usemos el signo `$` después del valor `html` para encontrar los textos `html` solo al final de la línea.",
 
   "steps.wordCharacter.title": "Carácter Palabra `\\w`: Letras, Número y Guíon bajo",

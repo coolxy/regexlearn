@@ -54,7 +54,7 @@
   "steps.asterisk.description": "We put an asterisk `*` after a character to indicate that the character may either not match at all or can match many times. For example, indicate that the letter `e` should never occur in the text, or it can occur once or more side by side.",
 
   "steps.plusCharacter.title": "Plus Sign `+`",
-  "steps.plusCharacter.description": "To indicate that a character can occur one or more times, we put a plus sign `+` after a character. For example, indicate that the letter `e` can occur one or more times in the text.",
+  "steps.plusCharacter.description": "To indicate that a character must occur one or more times, we put a plus sign `+` after a character. For example, indicate that the letter `e` must occur one or more times in the text.",
 
   "steps.questionMark.title": "Question Mark `?`",
   "steps.questionMark.description": "To indicate that a character is optional, we put a `?` question mark after a character. For example, indicate that the following letter `u` is optional.",
@@ -69,7 +69,7 @@
   "steps.quantifierRange.description": "To express the occurrence of a character in a certain number range, we write curly braces `{x,y}` for the inclusive interval. For example, indicate that the following letter `e` can only occur between `1` and `3` times in a row.",
 
   "examples.asterisk.title": "Practice: Asterisk `*`",
-  "examples.asterisk.description": "Use the asterisk `*` to write the expression that will select each word, suitable for the absence of the letter `e` in the text and the presence of one or more.",
+  "examples.asterisk.description": "Use the asterisk `*` to write the expression that will select each word where the letter `e` is absent or is present one or more times.",
 
   "examples.plusCharacter.title": "Practice: Plus Sign `+`",
   "examples.plusCharacter.description": "Write the expression using the plus sign `+` to select words in which the letter `e` occurs one or more times in the text.",

@@ -27,7 +27,7 @@
   "steps.range.description": "Pour trouver les lettres dans l'intervalle spécifié, la lettre de départ et la lettre d'arrivée sont écrites entre crochets `[]` avec un tiret entre les deux `-`. Cette expression est sensible à la casse. Tapez l'expression qui sélectionnera toutes les lettres minuscules entre `e` et `o`, y compris elles-mêmes.",
 
   "steps.rangeNumber.title": "Plage de nombres `[0-9]`",
-  "steps.rangeNumber.description": "Pour trouver les nombres dans l'intervalle spécifié, le nombre de départ et le nombre d'arrivée sont écrits entre crochets `[]` avec un tiret `-` entre eux. Écrivez une expression qui sélectionnera tous les nombres compris entre `3` et `6`, y compris eux-mêmes.",
+  "steps.rangeNumber.description": "Pour trouver les chiffres dans l'intervalle spécifié, le chiffre de départ et le chiffre d'arrivée sont écrits entre crochets `[]` avec un tiret `-` entre eux. Écrivez une expression qui sélectionnera tous les chiffres compris entre `3` et `6`, y compris eux-mêmes.",
 
   "examples.basicMatchers.title": "Pratique : Correspondance de base",
   "examples.basicMatchers.description": "Ecrivez l'expression qui sélectionnera les mots `of` dans le texte.",
@@ -45,7 +45,7 @@
   "examples.range.description": "Écrivez l'expression qui sélectionnera les lettres de `g` à `k` dans le texte. \\n Les lettres `g` et `k` doivent également être incluses dans cette plage.",
 
   "examples.rangeNumber.title": "Pratique : Plage de nombre",
-  "examples.rangeNumber.description": "Tapez une expression pour sélectionner les nombres de `2` à `7` dans le texte.\\n Les chiffres 2 et 7 devraient également être inclus dans cette fourchette.",
+  "examples.rangeNumber.description": "Tapez une expression pour sélectionner les chiffres de `2` à `7` dans le texte.\\n Les chiffres 2 et 7 devraient également être inclus dans cette fourchette.",
 
   "steps.repetitions.title": "Répétitions",
   "steps.repetitions.description": "Certains caractères spéciaux sont utilisés pour indiquer combien de fois un caractère sera répété dans le texte. Ces caractères spéciaux sont le plus `+`, l'astérisque `*`, et le point d'interrogation `?`.",
@@ -108,7 +108,7 @@
   "steps.dollar.description": "Utilisons le signe `$` après la valeur `html` pour trouver les textes `html` seulement à la fin de la ligne.",
 
   "steps.wordCharacter.title": "Caractère du mot `\\w`: Lettre, chiffre et soulignement",
-  "steps.wordCharacter.description": "L'expression `\\w` est utilisée pour trouver des lettres, des chiffres et des caractères de soulignement. Utilisons l'expression `\\w` pour trouver les caractères des mots dans le texte.",
+  "steps.wordCharacter.description": "L'expression `\\w` est utilisée pour trouver des lettres, des chiffres et des caractères de soulignement. Utilisons l'expression `\\w` pour trouver ces caractères dans le texte.",
 
   "steps.withoutWordCharacter.title": "Sauf le caractère du mot `\\W`",
   "steps.withoutWordCharacter.description": "L'expression `\\W` est utilisée pour trouver des caractères autres que des lettres, des chiffres et des caractères de soulignement.",
@@ -116,11 +116,11 @@
   "steps.numberCharacter.title": "Caractère numérique `\\d`",
   "steps.numberCharacter.description": "`\\d` est utilisé pour trouver uniquement les caractères numériques.",
 
-  "steps.withoutNumberCharacter.title": "Except Number Character `\\D`",
+  "steps.withoutNumberCharacter.title": "Sauf le caractère numérique `\\D`",
   "steps.withoutNumberCharacter.description": "`\\D` est utilisé pour trouver uniquement les caractères non numériques.",
 
   "steps.spaceCharacter.title": "Caractère d'espace `\\s`",
-  "steps.spaceCharacter.description": "`\\S` est utilisé pour trouver uniquement les caractères d'espace.",
+  "steps.spaceCharacter.description": "`\\s` est utilisé pour trouver uniquement les caractères d'espace.",
 
   "steps.withoutSpaceCharacter.title": "Sauf le caractère espace `\\S`",
   "steps.withoutSpaceCharacter.description": "`\\S` est utilisé pour trouver des caractères qui ne sont pas d'espaces.",
